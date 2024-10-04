@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>โปรไฟล์นักศึกษา</title>
+    <title>Profile</title>
     <link rel="stylesheet" href="styles.css">
     <script src="https://kit.fontawesome.com/6f0943671f.js" crossorigin="anonymous"></script>
     <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
@@ -14,7 +14,7 @@
         <div class="logo"><a href="">My Profile</a></div>
         <ul>
             <li><a href="#home" class="nav-link active">About Me</a></li>
-            <li><a href="#work" class="nav-link">My Works</a></li>
+            <li><a href="#my-work" class="nav-link">My Works</a></li>
             <li><a href="#contact" class="nav-link"><span>Contact</span></a></li>
         </ul>
     </div>
@@ -43,52 +43,58 @@
         </div>
     </section>
 
-    <section class="work" id="work">
-        <div class="container">
-            <h2>ผลงานนักศึกษา</h2>
-            <h3>วิชา Frontend</h3>
-            <table>
-                <thead>
-                    <tr>
-                        <th>ชื่อผลงาน</th>
-                        <th>ลิงค์</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <td>โปรเจคเว็บไซต์ส่วนตัว</td>
-                        <td><a href="https://yourwebsite.com" target="_blank">ดูผลงาน</a></td>
-                    </tr>
-                    <tr>
-                        <td>แอปพลิเคชัน To-Do List</td>
-                        <td><a href="https://yourtodoapp.com" target="_blank">ดูผลงาน</a></td>
-                    </tr>
-                    <!-- เพิ่มแถวใหม่ตามผลงานที่ต้องการ -->
-                </tbody>
-            </table>
-    
-            <h3>วิชา OOP</h3>
-            <table>
-                <thead>
-                    <tr>
-                        <th>ชื่อผลงาน</th>
-                        <th>ลิงค์</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <td>โปรแกรมจัดการหนังสือ</td>
-                        <td><a href="https://yourlibraryapp.com" target="_blank">ดูผลงาน</a></td>
-                    </tr>
-                    <tr>
-                        <td>เกม Snake</td>
-                        <td><a href="https://yourgame.com" target="_blank">ดูผลงาน</a></td>
-                    </tr>
-                    <!-- เพิ่มแถวใหม่ตามผลงานที่ต้องการ -->
-                </tbody>
-            </table>
+    <section class="work" id="my-work">
+        <div class="container-work">
+            <h2 class="separator-title">My Work Experience</h2>
+            <div class="separator-content">
+                <div class="column">
+                    <h3>Frontend</h3>
+                    <div class="work-item">
+                        <h4>Shopping Cart</h4>
+                        <a class="workBtn" href="https://shopping-cart-pi-three-92.vercel.app/">Click Here</a>
+                    </div>
+                    <div class="work-item">
+                        <h4>PokeDex</h4>
+                        <p>PokeDex ของ Pokemon โดยใช้ระบบ API </p>
+                        <a class="workBtn" href="https://pitchakornskt.github.io/pokedex-Project/">Click Here</a>
+                    </div>
+                    <div class="work-item">
+                        <h4>Weather Program</h4>
+                        <p>โปรแกรมบอกสภาพอากาศโดยใช้ API </p>
+                        <a class="workBtn" href="https://pitchakornskt.github.io/weather_program/">Click Here</a>
+                    </div>
+                </div>
+                <div class="column">
+                    <h3>OOP</h3>
+                    <div class="work-item">
+                        <h4>TodoCRUD</h4>
+                        <a class="workBtn" href="https://github.com/PitchakornSKT/TodoCRUD.git">Click Here</a>
+                    </div>
+                    <div class="work-item">
+                        <h4>Project D</h4>
+                        <a class="workBtn" href="https://shopping-cart-pi-three-92.vercel.app/">Click Here</a>
+                    </div>
+                    <div class="work-item">
+                        <h4>อยู่ในขั้นตอนพัฒนา</h4>
+                        <a class="workBtn" href="https://shopping-cart-pi-three-92.vercel.app/">Click Here</a>
+                    </div>
+                </div>
+            </div>
         </div>
     </section>
+    
+    <section class="footer">
+        <p>Developer @Pichakorn Sakulthai 653450095-6</p>
+    </section>
+    
+    
+    
+    
+    
+    
+    
+    
+    
     
 
     <!-- java script -->

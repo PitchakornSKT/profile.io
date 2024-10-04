@@ -8,15 +8,24 @@
 }
 
 body{
-    background-color: #212529;
+    background-color: #100e17;
 }
 
-.navbar{
+.navbar {
     display: flex;
     justify-content: space-between;
-    padding: 50px 150px;
-    margin: 0px 1rem;
+    padding: 50px 130px; /* Padding ต้นฉบับ */
+    margin: 0px 3rem;
     border-bottom: 1px solid #32373d;
+    position: sticky;
+    top: 0; 
+    z-index: 1000; 
+    background-color: #100e17; 
+    transition: padding 0.3s ease; /* เปลี่ยนแปลงการเปลี่ยนแปลง padding */
+}
+
+.navbar.scrolled {
+    padding: 30px 130px; /* ลด padding ลง 20 px */
 }
 
 .navbar .logo{
@@ -170,37 +179,84 @@ body{
 /* section work */
 .work {
     padding: 50px 0;
+    background-color: #100e17;
     color: white;
+    margin-top: 1rem;
 }
 
-.container {
-    max-width: 800px;
-    margin: auto;
-    padding: 20px;
+.container-work {
+    width: 90%;
+    max-width: 1200px; 
+    margin: auto; 
+    text-align: center;
 }
 
-table {
-    width: 100%;
-    border-collapse: collapse;
-    margin-bottom: 40px;
+.separator-title {
+    margin-bottom: 50px; 
+    font-size: 2em;
+    color: #fff; 
 }
 
-th, td {
-    padding: 10px;
-    border: 1px solid #20c997; /* สีขอบของตาราง */
-    text-align: left;
+.separator-content {
+    display: flex;
+    justify-content: space-between;
 }
 
-th {
-    background-color: #20c997; /* สีพื้นหลังของหัวตาราง */
-    color: white; /* สีตัวอักษรในหัวตาราง */
+.column {
+    width: 42%; 
+    text-align: left; 
+    padding: 20px; 
+    background-color: #1f1e24;
+    border-radius: 8px; 
+    -webkit-box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
+    box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
 }
 
-a {
+.column h3 {
+    font-size: 2em; 
+    color: #fff; 
+    margin-bottom: 20px; 
+    text-align: center;
+}
+
+.work-item {
+    margin-bottom: 20px; /* ระยะห่างระหว่างรายการ */
+    border-top: 1px solid #333041;
+}
+
+.work-item h4 {
+    font-size: 1.5em; /* ขนาดตัวอักษรสำหรับหัวข้อรายการ */
+    color: #20c997; /* สีของหัวข้อรายการ */
+    margin-bottom: 10px; /* ระยะห่างด้านล่าง */
+    margin-top: 10px;
+
+}
+
+.work-item p {
+    font-size: 1em; /* ขนาดตัวอักษรสำหรับเนื้อหา */
+    margin-bottom: 1rem;
+}
+
+.workBtn{
+    padding: 5px 10px;
+    border-radius: 5px;
+    background-color: #20c997;
+    color: #fff;
+    transition: .3s ease;
+    
+}
+
+.workBtn:hover{
+    background-color: #fff;
     color: #20c997;
-    text-decoration: none;
 }
 
-a:hover {
-    text-decoration: underline; /* เพิ่มเส้นใต้เมื่อ hover */
+/* footer */
+.footer{
+    background-color: #32373d;
+    padding: 20px;
+}.footer p{
+    color: #fff;
+    text-align: center;
 }
+
