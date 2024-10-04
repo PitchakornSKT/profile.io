@@ -1,0 +1,206 @@
+@import url('https://fonts.googleapis.com/css2?family=Kanit:wght@400;500;600;700;800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    list-style: none;
+    font-family: 'Poppins';
+}
+
+body{
+    background-color: #212529;
+}
+
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    padding: 50px 150px;
+    margin: 0px 1rem;
+    border-bottom: 1px solid #32373d;
+}
+
+.navbar .logo{
+    display: flex;
+    align-items: center;
+    padding-left: 1rem;
+}
+
+.navbar .logo a{
+    font-size: 28px;
+    color: #fff;
+}
+
+.navbar ul{
+    display: flex;
+    padding-right: 1rem;
+}
+
+.navbar ul li{
+    padding: 10px;
+}
+
+.navbar ul li a{
+    color: #fff;
+    font-size: 18px;
+    font-weight: 500;
+    transition: .3s ease;
+}
+
+.navbar ul li a span{
+    background-color: #20c997;
+    padding: 10px 10px;
+    margin: 0 -5px;
+    border-radius: 5px;
+    color: #fff;
+    transition: .3s ease;
+}
+
+.navbar ul li a.active {
+    color: #20c997; 
+}
+
+.navbar ul li a.active span {
+    color: #fff; 
+}
+
+.navbar ul li a:hover {
+    color: #20c997;
+}
+
+.navbar ul li a:hover span{
+    background-color: #ffffff;
+    color: #20c997;
+}
+
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 100px 0; /* เพิ่มระยะด้านบนและล่าง */
+}
+
+.home {
+    color: white;
+    padding: 50px 0;
+    text-align: center;
+}
+
+.intro {
+    max-width: 600px; /* จำกัดความกว้าง */
+    
+}
+
+.intro .halo{
+    background-color: #20c997;
+    padding: 10px;
+    font-size: 18px;
+    max-width: 80px;
+    border-top-right-radius: 25px;
+    border-bottom-right-radius: 25px;
+    border-top-left-radius: 25px;
+}
+
+.intro h1 {
+    font-size: 3em;
+}
+
+.intro h2 {
+    text-align: left;
+    font-size: 2em;
+    margin: 10px 0;
+    color: #20c997;
+}
+
+.intro p {
+    margin: 20px 0;
+}
+
+.social{
+    text-align: left;
+}
+
+.social li a{
+    color: #fff;
+    font-size: 18px;
+    transition: .3s ease;
+}
+
+.social li a:hover{
+    color: #20c997;
+}
+
+.social li a .fa{
+    color: white; 
+    padding: 10px;
+}
+
+.social li a span .fa{
+    color: #20c997;
+}
+
+.btn {
+    background: #20c997;
+    color: #fff;
+    padding: 15px 25px;
+    border-radius: 5px;
+    transition: .3s ease;
+    display: inline-block;
+    position: relative;
+    top: 20px; 
+    font-weight: 500;
+}
+
+.btn:hover {
+    background: #fff;
+    color: #20c997;
+}
+
+.profile-img img {
+    width: 400px;
+    height: 400px;
+    border-radius: 50%; /* ทำให้เป็นรูปวงกลม */
+    border: 3px solid #ffffff;
+    box-shadow: 2px 2px 20px 5px rgba(32, 201, 151, 0.1);
+}
+
+
+/* section work */
+.work {
+    padding: 50px 0;
+    color: white;
+}
+
+.container {
+    max-width: 800px;
+    margin: auto;
+    padding: 20px;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 40px;
+}
+
+th, td {
+    padding: 10px;
+    border: 1px solid #20c997; /* สีขอบของตาราง */
+    text-align: left;
+}
+
+th {
+    background-color: #20c997; /* สีพื้นหลังของหัวตาราง */
+    color: white; /* สีตัวอักษรในหัวตาราง */
+}
+
+a {
+    color: #20c997;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline; /* เพิ่มเส้นใต้เมื่อ hover */
+}
